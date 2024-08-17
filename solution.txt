@@ -1,0 +1,20 @@
+git clone https://github.com/enderbrine13/OSC_Tasks.git Eyad
+git config --global user.name "Eyad-Farouk"
+git config --global user.email "faroukeyad11@gmail.com"
+cd Eyad
+mkdir task-2
+cd task-2
+touch greeting.txt
+nano greeting.txt
+git add task-2
+git commit -m "Added greeting"
+git checkout -b intro
+cd task-2
+nano greeting.txt
+cd ..
+git add *
+git commit -m "Added I love Git"
+git checkout main
+git merge intro
+git tag -a v1
+git push -u origin main
