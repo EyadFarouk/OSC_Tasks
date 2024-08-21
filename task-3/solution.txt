@@ -27,4 +27,9 @@ cat data/data.csv
 unlink link_data.csv 
 touch summary.txt
 echo "Summary Start">>summary.txt
-
+date | tee >> summary.txt 
+cat summary.txt | wc -l | tee >> summary.txt
+cat reports/report1.md | wc -w
+cat logs/system.log | wc -c | tee >> summary.txt 
+ls | wc -l | tee >> summary.txt 
+cat summary.txt
