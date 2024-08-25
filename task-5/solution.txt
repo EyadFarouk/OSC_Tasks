@@ -1,0 +1,3 @@
+cut -f 2 -d "," info.csv | sort -o emails.txt -u
+ps -e --sort cmd | tee > processes.txt
+
