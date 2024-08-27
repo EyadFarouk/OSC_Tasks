@@ -8,7 +8,6 @@ mkdir tempo
 for (( i=1 ; i<=$numberOfLines ; i++ ));
 do
 	echo "Number: $i"
-	cd $path
 	file=$(ls -1 | grep ".txt" | head -$i $Lines | tail -1)
 	echo "$file"
 	mv $file tempo/old_"$file"
